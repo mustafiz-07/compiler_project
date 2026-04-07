@@ -1,0 +1,14 @@
+bootup() {
+    byte k << 0;
+    byte j << 0;
+
+    repeat (k <= 10) {
+        j << 0;
+        repeat (j <= 10) {
+            display("%d %d\n", k, j);
+            j++;
+        }
+        k++;
+    }
+    display("Here the loop ended");
+}
