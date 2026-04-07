@@ -1,6 +1,9 @@
 bootup() {
     byte k << 0;
     byte j << 0;
+    timestamp parsedTs << parseTime("2026-04-07 23:00:00", "%Y-%m-%d %H:%M:%S");
+
+    display("Parsed timestamp (ms): %lld\n", parsedTs);
 
     repeat (k <= 10) {
         j << 0;
